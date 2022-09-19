@@ -1,0 +1,67 @@
+{
+  "lines": {
+    "paragraph": "<p>$content$</p>"
+  },
+  "cards": {
+    "simple": "<mat-card *ngIf=\"$itemVariable$\">$itemVariable$</mat-card>"
+  },
+  "layouts": {
+    "card": "<mat-card><mat-card-title></mat-card-title><mat-card-content></mat-card-content></mat-card>",
+    "toolbar": "<mat-toolbar color=\"primary\"></mat-toolbar>",
+    "stepper": "<mat-stepper #stepper>\n  <mat-step label=\"Step 1\">\n    <section>Step 2</section>\n    <div>\n      <button mat-button matStepperNext>Next</button>\n    </div>\n  </mat-step>\n  <mat-step label=\"Step 2\">\n    <section>Step 2</section>\n    <div>\n      <button mat-button matStepperPrevious>Back</button>\n      <button mat-button matStepperNext>Next</button>\n    </div>\n  </mat-step>\n  <mat-step label=\"Done\">\n    <p>You are now done.</p>\n    <div>\n      <button mat-button matStepperPrevious>Back</button>\n      <button mat-button (click)=\"stepper.reset()\">Reset</button>\n    </div>\n  </mat-step>\n</mat-stepper>",
+    "tabs": "<mat-tab-group>\n  <mat-tab label=\"First\"> Content 1 </mat-tab>\n  <mat-tab label=\"Second\"> Content 2 </mat-tab>\n  <mat-tab label=\"Third\"> Content 3 </mat-tab>\n</mat-tab-group>",
+    "layouts": "<mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n  <mat-button-toggle value=\"bold\">Bold</mat-button-toggle>\n  <mat-button-toggle value=\"italic\">Italic</mat-button-toggle>\n  <mat-button-toggle value=\"underline\">Underline</mat-button-toggle>\n</mat-button-toggle-group>",
+    "table": "<table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\n  <ng-container matColumnDef=\"position\">\n    <th mat-header-cell *matHeaderCellDef> No. </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.position}} </td>\n  </ng-container>\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n</table>"
+  },
+  "inputs": {
+    "input-default": "<input matInput type=\"text\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required>",
+    "input-text": "<input matInput type=\"text\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required>",
+    "input-number": "<input matInput type=\"number\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required>",
+    "input-submit": "<button type=\"submit\" mat-raised-button color=\"primary\">$content$</button>"
+  },
+  "forms": {
+    "mat-form": {
+      "input": "<div><mat-form-field appearance=\"fill\"><mat-label>$label$</mat-label>$inputs.input-text$<mat-error *ngIf=\"$formVariable$.get('$formControlName$')!.invalid\">$formControlName$ is invalid</mat-error></mat-form-field></div>",
+      "formSubmit": "<div>$inputs.input-submit$</div>",
+      "form": "<form [formGroup]=\"$formVariable$\" (ngSubmit)=\"$submitCallback$\">$content$</form>"
+    }
+  },
+  "lists": {
+    "list": {
+      "list": "<mat-list role=\"list\" class=\"mat-elevation-z8\">$content$</mat-list>",
+      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">$itemVariable$</mat-list-item>"
+    },
+    "navbar": {
+      "list": "<mat-list role=\"list\" fxLayout=\"row\">\n  $content$\n</mat-list>",
+      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">\n  {{$itemVariable$}}\n</mat-list-item>"
+    },
+    "chip-list": {
+      "list": "<mat-chip-list aria-label=\"Fish selection\">\n  $content$\n</mat-chip-list>",
+      "item": "<mat-chip *ngFor=\"let $itemVariable$ of $listVariable$\">\n {{$itemVariable$}}\n</mat-chip>"
+    },
+    "accordion": {
+      "list": "<mat-accordion>\n   $content$\n</mat-accordion>",
+      "item": "<mat-expansion-panel *ngFor=\"let $itemVariable$ of $listVariable$\">\n    <mat-expansion-panel-header>\n      <mat-panel-title>\n        This is a title\n      </mat-panel-title>\n      <mat-panel-description>\n        This is a summary of the content\n      </mat-panel-description>\n    </mat-expansion-panel-header>\n    {{$itemVariable$}}\n  </mat-expansion-panel>"
+    },
+    "grid-list": {
+      "list": "<mat-grid-list cols=\"2\" rowHeight=\"2:1\">\n  $content$\n</mat-grid-list>",
+      "item": "<mat-grid-tile *ngFor=\"let $itemVariable$ of $listVariable$\">\n  {{$itemVariable$}}\n</mat-grid-tile>"
+    },
+    "menu": {
+      "list": "<button mat-button [matMenuTriggerFor]=\"menu\">Menu</button>\n<mat-menu #menu=\"matMenu\">\n  $content$\n</mat-menu>",
+      "item": "<button mat-menu-item *ngFor=\"let $itemVariable$ of $listVariable$\">\n  {{$itemVariable$}}\n</button>"
+    },
+    "select": {
+      "list": "<mat-form-field appearance=\"fill\">\n  <mat-label>Choose an option</mat-label>\n  <mat-select>\n    $content$\n   </mat-select>\n</mat-form-field>",
+      "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"
+    },
+    "radio-group": {
+      "list": "<mat-radio-group aria-label=\"Select an option\">\n  $content$\n</mat-radio-group>",
+      "item": "<mat-radio-button *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-radio-button>"
+    },
+    "checkbox": {
+      "list": "<section>\n  $content$\n</section>",
+      "item": "<mat-checkbox *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-checkbox>"
+    }
+  }
+}
