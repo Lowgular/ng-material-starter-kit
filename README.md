@@ -1,5 +1,4 @@
-# NgMaterialStarterKitAcms
-
+# Angular CLI with Material and Flex Layout Starter Kit
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
 ## Development server
