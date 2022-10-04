@@ -1,5 +1,12 @@
 # Angular CLI with Material and Flex Layout Starter Kit
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
+
+## Default lowgular architecture
+
+CMS - Component Model Service
+
+![CMS Diagram](https://lowgular.github.io/extension-documentation/assets/images/cms-architecture-176edee10455071607481965b7b8f5f8.png)
 
 ## Development server
 
