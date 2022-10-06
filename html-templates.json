@@ -29,7 +29,7 @@
   "lists": {
     "list": {
       "list": "<mat-list role=\"list\" class=\"mat-elevation-z8\">$content$</mat-list>",
-      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">$itemVariable$</mat-list-item>"
+      "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-list-item>"
     },
     "navbar": {
       "list": "<mat-list role=\"list\" fxLayout=\"row\">\n  $content$\n</mat-list>",
