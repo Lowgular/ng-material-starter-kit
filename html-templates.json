@@ -28,8 +28,12 @@
   },
   "lists": {
     "list": {
-      "list": "<mat-list role=\"list\" class=\"mat-elevation-z8\">$content$</mat-list>",
+      "list": "<mat-list role=\"list\">$content$</mat-list>",
       "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-list-item>"
+    },
+    "selection-list": {
+      "list": "<mat-selection-list role=\"list\">$content$</mat-selection-list>",
+      "item": "<mat-list-option role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-list-option>"
     },
     "navbar": {
       "list": "<mat-list role=\"list\" fxLayout=\"row\">\n  $content$\n</mat-list>",
