@@ -57,7 +57,7 @@
     },
     "select": {
       "list": "<mat-form-field appearance=\"fill\">\n  <mat-label>Choose an option</mat-label>\n  <mat-select>\n    $content$\n   </mat-select>\n</mat-form-field>",
-      "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"
+      "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\" [value]=\"$itemVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"
     },
     "radio-group": {
       "list": "<mat-radio-group aria-label=\"Select an option\">\n  $content$\n</mat-radio-group>",
