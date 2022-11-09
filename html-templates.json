@@ -8,6 +8,7 @@
   "layouts": {
     "card": "<mat-card><mat-card-title></mat-card-title><mat-card-content></mat-card-content></mat-card>",
     "toolbar": "<mat-toolbar color=\"primary\"></mat-toolbar>",
+    "two-columns-grid": "<mat-grid-list cols=\"2\" rowHeight=\"2:1\">\n  <mat-grid-tile>Left</mat-grid-tile>\n  <mat-grid-tile>Right</mat-grid-tile>\n</mat-grid-list>",
     "stepper": "<mat-stepper #stepper>\n  <mat-step label=\"Step 1\">\n    <section>Step 2</section>\n    <div>\n      <button mat-button matStepperNext>Next</button>\n    </div>\n  </mat-step>\n  <mat-step label=\"Step 2\">\n    <section>Step 2</section>\n    <div>\n      <button mat-button matStepperPrevious>Back</button>\n      <button mat-button matStepperNext>Next</button>\n    </div>\n  </mat-step>\n  <mat-step label=\"Done\">\n    <p>You are now done.</p>\n    <div>\n      <button mat-button matStepperPrevious>Back</button>\n      <button mat-button (click)=\"stepper.reset()\">Reset</button>\n    </div>\n  </mat-step>\n</mat-stepper>",
     "tabs": "<mat-tab-group>\n  <mat-tab label=\"First\"> Content 1 </mat-tab>\n  <mat-tab label=\"Second\"> Content 2 </mat-tab>\n  <mat-tab label=\"Third\"> Content 3 </mat-tab>\n</mat-tab-group>",
     "layouts": "<mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n  <mat-button-toggle value=\"bold\">Bold</mat-button-toggle>\n  <mat-button-toggle value=\"italic\">Italic</mat-button-toggle>\n  <mat-button-toggle value=\"underline\">Underline</mat-button-toggle>\n</mat-button-toggle-group>",
