@@ -14,7 +14,9 @@
     "layouts": "<mat-button-toggle-group name=\"fontStyle\" aria-label=\"Font Style\">\n  <mat-button-toggle value=\"bold\">Bold</mat-button-toggle>\n  <mat-button-toggle value=\"italic\">Italic</mat-button-toggle>\n  <mat-button-toggle value=\"underline\">Underline</mat-button-toggle>\n</mat-button-toggle-group>",
     "table": "<table mat-table [dataSource]=\"dataSource\" class=\"mat-elevation-z8\">\n  <ng-container matColumnDef=\"position\">\n    <th mat-header-cell *matHeaderCellDef> No. </th>\n    <td mat-cell *matCellDef=\"let element\"> {{element.position}} </td>\n  </ng-container>\n  <tr mat-header-row *matHeaderRowDef=\"displayedColumns\"></tr>\n  <tr mat-row *matRowDef=\"let row; columns: displayedColumns;\"></tr>\n</table>",
     "spinner": "<mat-progress-spinner\n        [color]=\"'primary'\"\n        [mode]=\"'indeterminate'\"\n        [value]=\"50\">\n      </mat-progress-spinner>",
-    "progress-bar": " <mat-progress-bar\n        class=\"example-margin\"\n        [color]=\"'primary'\"\n        [mode]=\"'indeterminate'\"\n        [value]=\"50\">\n      </mat-progress-bar>"
+    "progress-bar": " <mat-progress-bar\n        class=\"example-margin\"\n        [color]=\"'primary'\"\n        [mode]=\"'indeterminate'\"\n        [value]=\"50\">\n      </mat-progress-bar>",
+    "simple-no-data-template": " <ng-template #emptyState>\n      Oops! There is no data!\n    </ng-template>",
+    "image-no-data-template": "    <ng-template #emptyState>\n      <div style=\"text-align: center\"><img style=\"height: 500px\" src=\"assets/no-data.jpg\"></div>\n      <div style=\"text-align: center\"><a\n        href=\"https://www.freepik.com/free-vector/no-data-concept-illustration_5928292.htm#query=no%20data%20found&position=0&from_view=keyword\">Image\n        by storyset</a> on Freepik\n      </div>\n    </ng-template>"
   },
   "inputs": {
     "input-default": "<input matInput type=\"text\" placeholder=\"$label$\" formControlName=\"$formControlName$\" required>",
