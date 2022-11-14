@@ -42,6 +42,10 @@
       "list": "<mat-list role=\"list\" fxLayout=\"row\">\n  $content$\n</mat-list>",
       "item": "<mat-list-item role=\"listitem\" *ngFor=\"let $itemVariable$ of $listVariable$\">\n  {{$itemVariable$}}\n</mat-list-item>"
     },
+    "navbar-with-selection": {
+      "list": "<mat-selection-list role=\"list\" fxLayout=\"row\" [multiple]=\"false\">\n  $content$\n</mat-selection-list>",
+      "item": "<mat-list-option role=\"listoption\" *ngFor=\"let $itemVariable$ of $listVariable$\" [value]=\"$itemVariable$\">\n  {{$itemVariable$}}\n</mat-list-option>"
+    },
     "chip-list": {
       "list": "<mat-chip-list aria-label=\"Fish selection\">\n  $content$\n</mat-chip-list>",
       "item": "<mat-chip *ngFor=\"let $itemVariable$ of $listVariable$\">\n {{$itemVariable$}}\n</mat-chip>"
