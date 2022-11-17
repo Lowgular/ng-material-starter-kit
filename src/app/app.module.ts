@@ -10,6 +10,8 @@ import { CategoriesServiceModule } from './services/categories.service-module';
 import { CategoriesComponentModule } from './components/categories/categories.component-module';
 import { CryptoServiceModule } from './services/crypto.service-module';
 import { CryptoComponentModule } from './components/crypto/crypto.component-module';
+import { PublicHolidaysComponentModule } from './components/public-holidays/public-holidays.component-module';
+import { PublicHolidaysServiceModule } from './services/public-holidays.service-module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -24,6 +26,8 @@ import { CryptoComponentModule } from './components/crypto/crypto.component-modu
     CategoriesComponentModule,
     CryptoServiceModule,
     CryptoComponentModule,
+    PublicHolidaysComponentModule,
+    PublicHolidaysServiceModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
