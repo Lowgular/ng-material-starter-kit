@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-card-title> Crypto chips </mat-card-title>
+  <mat-card-content>
+    <mat-chip-list aria-label="Fish selection">
+      <mat-chip *ngFor="let item of crypto$ | async">
+        {{ item.symbol }}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+</mat-card>
