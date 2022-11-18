@@ -6,6 +6,9 @@
     "simple": "<mat-card *ngIf=\"$itemVariable$\">$itemVariable$</mat-card>"
   },
   "layouts": {
+    "add-button": "<button mat-mini-fab><mat-icon>add</mat-icon></button>",
+    "edit-button": "<button mat-mini-fab><mat-icon>edit</mat-icon></button>",
+    "remove-button": "<button mat-mini-fab><mat-icon>remove</mat-icon></button>",
     "card": "<mat-card><mat-card-title></mat-card-title><mat-card-content></mat-card-content></mat-card>",
     "toolbar": "<mat-toolbar color=\"primary\"></mat-toolbar>",
     "two-columns-grid": "<mat-grid-list cols=\"2\" rowHeight=\"2:1\">\n  <mat-grid-tile>Left</mat-grid-tile>\n  <mat-grid-tile>Right</mat-grid-tile>\n</mat-grid-list>",
