@@ -71,6 +71,14 @@
       "list": "<mat-form-field appearance=\"fill\">\n  <mat-label>Choose an option</mat-label>\n  <mat-select>\n    $content$\n   </mat-select>\n</mat-form-field>",
       "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\" [value]=\"$itemVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"
     },
+    "autocomplete": {
+      "list": "<mat-form-field appearance=\"fill\">\n  <mat-label>Choose an option</mat-label>\n <input type=\"text\"\n       placeholder=\"Pick one\"\n        matInput\n       formControlName=\"$controlName$\"\n       [matAutocomplete]=\"$controlName$\"><mat-autocomplete #$controlName$=\"matAutocomplete\">\n    $content$\n   </mat-autocomplete>\n</mat-form-field>",
+      "item": "<mat-option *ngFor=\"let $itemVariable$ of $listVariable$\" [value]=\"$itemVariable$\">\n     {{$itemVariable$}}    \n</mat-option>"
+    },
+    "table": {
+      "list": " <ng-container *ngIf=\"$listVariable$ as list\">\n      <table mat-table [dataSource]=\"list\" class=\"mat-elevation-z8\">  $content$  \n      </table>\n    </ng-container>",
+      "item": "       <!-- Column 1 -->\n        <ng-container matColumnDef=\"column1\">\n          <th mat-header-cell *matHeaderCellDef> column1 </th>\n          <td mat-cell *matCellDef=\"let element\"> {{ element }} </td>\n        </ng-container>\n        <!-- Column 2 -->\n        <ng-container matColumnDef=\"column2\">\n          <th mat-header-cell *matHeaderCellDef> column2 </th>\n          <td mat-cell *matCellDef=\"let element\"> {{element}} </td>\n        </ng-container>\n\n        <tr mat-header-row *matHeaderRowDef=\"['column1', 'column2']\"></tr>\n        <tr mat-row *matRowDef=\"let row; columns: ['column1', 'column2'];\"></tr>"
+    },
     "radio-group": {
       "list": "<mat-radio-group aria-label=\"Select an option\">\n  $content$\n</mat-radio-group>",
       "item": "<mat-radio-button *ngFor=\"let $itemVariable$ of $listVariable$\">{{$itemVariable$}}</mat-radio-button>"
